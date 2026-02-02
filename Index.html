@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>KIKO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #111 0%, #000 70%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(20, 20, 20, 0.65);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      padding: 30px;
+      width: 330px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(0,0,0,0.8);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      background: linear-gradient(135deg, #444, #111);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+
+    .bio {
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .links a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.15), transparent);
+      transition: 0.4s;
+    }
+
+    .links a:hover::before {
+      left: 100%;
+    }
+
+    .links a:hover {
+      background: rgba(255,255,255,0.12);
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin-top: 22px;
+      font-size: 11px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="avatar">K</div>
+
+    <h1>KIKO</h1>
+    <div class="bio">criador • roblox • dark vibes</div>
+
+    <div class="links">
+      <a href="https://discord.gg/overdrivehub" target="_blank">Discord</a>
+      <a href="https://youtube.com/@fulanadit4l?si=aKW7_JmIphoBMs6N" target="_blank">YouTube</a>
+      <a href="https://www.roblox.com/share/g/356915974" target="_blank">Grupo Roblox</a>
+    </div>
+
+    <footer>© guns style</footer>
+  </div>
+
+</body>
+</html>
